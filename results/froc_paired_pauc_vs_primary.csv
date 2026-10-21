@@ -1,0 +1,5 @@
+domain,family,comparator,difference_vs_primary_comparator,ci_low,ci_high,probability_difference_positive
+KiTS23,semantic_margin,component_mean_confidence,-0.07240143369175611,-0.12051406926406928,-0.03265569059732426,0.0
+KiTS23,scan_gate,component_mean_confidence,-0.046863799283154095,-0.08753386533166022,-0.011470575872215257,0.0008
+RCC-AID,semantic_margin,component_mean_confidence,-0.24899267399267394,-0.4052631578947368,-0.135746829105474,0.0
+RCC-AID,scan_gate,component_mean_confidence,-0.26510989010989006,-0.4376268427518429,-0.13478671638018191,0.0

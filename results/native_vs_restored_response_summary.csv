@@ -1,0 +1,11 @@
+domain,model,patients,native_cyst_nonempty,restored_cyst_nonempty,native_nonempty_restored_empty,native_empty_restored_nonempty
+KiTS23,VoxTell v1.1,409,0,0,0,0
+KiTS23,SAT-Pro,409,357,350,7,0
+KiTS23,SegVol,409,396,396,0,0
+KiTS23,Medical-SAM3,409,409,409,0,0
+KiTS23,BiomedParse v2,409,275,269,6,0
+RCC-AID,VoxTell v1.1,91,0,0,0,0
+RCC-AID,SAT-Pro,91,74,74,0,0
+RCC-AID,SegVol,91,89,89,0,0
+RCC-AID,Medical-SAM3,91,91,91,0,0
+RCC-AID,BiomedParse v2,91,60,60,0,0

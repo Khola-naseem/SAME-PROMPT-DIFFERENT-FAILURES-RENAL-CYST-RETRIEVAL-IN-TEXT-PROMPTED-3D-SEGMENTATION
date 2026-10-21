@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+.venv/
+env/
+data/
+checkpoints/
+predictions/
+probabilities/
+*.nii
+*.nii.gz
+*.pt
+*.pth
+*.ckpt
+*.bin

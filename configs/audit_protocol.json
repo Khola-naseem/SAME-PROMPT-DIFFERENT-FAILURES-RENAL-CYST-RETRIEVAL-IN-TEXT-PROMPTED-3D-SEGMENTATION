@@ -1,0 +1,47 @@
+{
+  "release_date": "2026-10-21",
+  "status": "frozen_reproducibility_record",
+  "canonical_prompts": [
+    "kidney",
+    "kidney cyst",
+    "kidney tumor"
+  ],
+  "model_prompt_mapping": {
+    "VoxTell v1.1": "independent literal concept queries",
+    "SAT-Pro": "joint kidney and kidney-cyst context; separate kidney-tumor query",
+    "SegVol": "each concept inserted into the released CT sentence template",
+    "Medical-SAM3": "independent literal concept queries",
+    "BiomedParse v2": "independent literal concept queries"
+  },
+  "main_label_free_scale_audit": {
+    "KiTS23_patients": 409,
+    "RCC_AID_v2_patients": 91,
+    "total_patients": 500,
+    "target_status_available_to_inference": false,
+    "reference_paths_available_to_inference": false,
+    "crop_center_source": "full_volume_SAT_Pro_kidney_query",
+    "crop_geometry_mm": [360, 260, 324],
+    "crop_spacing_mm": [1, 1, 3],
+    "evaluation_grid": "original_CT_reference_grid"
+  },
+  "supporting_reference_assisted_analyses": {
+    "KiTS23_patients": 60,
+    "RCC_AID_patients": 60,
+    "cyst_positive_per_domain": 30,
+    "cyst_negative_per_domain": 30,
+    "crop": "reference_renal_bounding_box_plus_50_mm_at_native_spacing"
+  },
+  "component_endpoint": {
+    "minimum_component_ml": 0.05,
+    "connectivity": 26,
+    "matching": "maximum_cardinality_one_to_one",
+    "primary_iou": 0.10,
+    "secondary_iou": 0.25
+  },
+  "uncertainty": {
+    "resampling_unit": "patient",
+    "bootstrap_iterations": 5000,
+    "bootstrap_seed": 20261016,
+    "lesions_resampled_independently": false
+  }
+}
