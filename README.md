@@ -1,16 +1,9 @@
-# Anatomy Is Not Semantics
+# SAME-PROMPT-DIFFERENT-FAILURES: RENAL-CYST-RETRIEVAL-IN-TEXT-PROMPTED-3D-SEGMENTATION
 
 Reproducibility records for the renal CT concept-retrieval audit of five
 released text-promptable 3D segmentation checkpoints.
 
-## What this release contains
 
-- Exact checkpoint SHA-256 digests and source-repository commits.
-- Evidence that each evaluated checkpoint exposes a separately supervised
-  kidney-cyst concept.
-- Frozen prompt, crop, component, matching, threshold, and bootstrap settings.
-- Aggregate FROC, prompt-pairing, crop-sensitivity, and allocation results.
-- Publication figures generated from the aggregate results.
 
 ## What this release does not contain
 
@@ -52,14 +45,7 @@ figures/       manuscript figures derived from aggregate results
 scripts/       release-integrity validation
 ```
 
-## Integrity verification
 
-From the repository root:
-
-```bash
-sha256sum -c ARTIFACT_SHA256.txt
-python3 scripts/validate_release.py
-```
 
 ## Upstream models and datasets
 
