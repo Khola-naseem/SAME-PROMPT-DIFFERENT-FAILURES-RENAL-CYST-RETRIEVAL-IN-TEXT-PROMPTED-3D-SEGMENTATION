@@ -27,6 +27,15 @@ comparators; those local models were evaluated only on the disjoint 60-case
 KiTS23 audit subset. Local-model results must not be extrapolated to all 409
 KiTS23 scans. The RCC-AID scale audit includes all 91 patients.
 
+## RCC-AID contrast phases
+
+Each of the 91 selected annotated NIfTI volumes was matched to RCC-AID v2.0.0
+metadata by exact SeriesInstanceUID while retaining its source acquisition
+tag. The selected cohort contains 17 arterial, 35 venous, and 39 delayed
+volumes, with one volume per patient. Phase-stratified tables reuse the frozen
+predictions and are descriptive between-patient associations; they are not
+matched multiphase estimates.
+
 ## Prompt mapping
 
 The canonical concepts were `kidney`, `kidney cyst`, and `kidney tumor`.

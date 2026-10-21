@@ -4,7 +4,6 @@ Reproducibility records for the renal CT concept-retrieval audit of five
 released text-promptable 3D segmentation checkpoints.
 
 
-
 ## What this release does not contain
 
 This repository does not redistribute CT volumes, annotations, model weights,

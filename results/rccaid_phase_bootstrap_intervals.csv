@@ -1,0 +1,136 @@
+model,phase,endpoint,patients,estimate,ci95_low,ci95_high,resampling_unit,bootstrap_resamples
+BiomedParse v2,arterial,positive_mean_dice,6,0.1293948612579082,0.0,0.3291046060457033,patient,5000
+BiomedParse v2,arterial,positive_patient_detection_iou10,6,0.3333333333333333,0.0,0.6666666666666666,patient,5000
+BiomedParse v2,arterial,positive_lesion_sensitivity_iou10,6,0.2857142857142857,0.0,0.45,patient,5000
+BiomedParse v2,arterial,negative_significant_output_rate,11,0.6363636363636364,0.36363636363636365,0.9090909090909091,patient,5000
+BiomedParse v2,arterial,allocation_cyst,17,0.05839884870612691,0.0,0.2718872984218186,patient,5000
+BiomedParse v2,arterial,allocation_tumor,17,0.8220131652586413,0.46106183520995825,0.9410686844862055,patient,5000
+BiomedParse v2,arterial,allocation_background,17,0.08567811742131493,0.02951847385967337,0.24369845772978027,patient,5000
+BiomedParse v2,venous,positive_mean_dice,12,0.3133647503913099,0.16114727337125312,0.47404027631171874,patient,5000
+BiomedParse v2,venous,positive_patient_detection_iou10,12,0.75,0.5,1.0,patient,5000
+BiomedParse v2,venous,positive_lesion_sensitivity_iou10,12,0.45161290322580644,0.3333333333333333,0.5666666666666667,patient,5000
+BiomedParse v2,venous,negative_significant_output_rate,23,0.6521739130434783,0.43478260869565216,0.8260869565217391,patient,5000
+BiomedParse v2,venous,allocation_cyst,35,0.10624745558761965,0.013639573307012383,0.25375960122045693,patient,5000
+BiomedParse v2,venous,allocation_tumor,35,0.8439117840969272,0.6904197028523843,0.9496519640000719,patient,5000
+BiomedParse v2,venous,allocation_background,35,0.04245791136618282,0.017554062367201098,0.09873289396699839,patient,5000
+BiomedParse v2,delayed,positive_mean_dice,14,0.24742320972175486,0.09522598282172627,0.4172774276980473,patient,5000
+BiomedParse v2,delayed,positive_patient_detection_iou10,14,0.5,0.21428571428571427,0.7857142857142857,patient,5000
+BiomedParse v2,delayed,positive_lesion_sensitivity_iou10,14,0.3023255813953488,0.10869565217391304,0.5116279069767442,patient,5000
+BiomedParse v2,delayed,negative_significant_output_rate,25,0.44,0.24,0.64,patient,5000
+BiomedParse v2,delayed,allocation_cyst,39,0.09042114290232396,0.021818655729088622,0.2977444057849531,patient,5000
+BiomedParse v2,delayed,allocation_tumor,39,0.7701575053775649,0.340820473016515,0.947000716755498,patient,5000
+BiomedParse v2,delayed,allocation_background,39,0.13006003004543307,0.005568555584986645,0.4844509305926461,patient,5000
+Medical-SAM3,arterial,positive_mean_dice,6,0.342805831487434,0.16762966609348315,0.5015666313583539,patient,5000
+Medical-SAM3,arterial,positive_patient_detection_iou10,6,0.8333333333333334,0.5,1.0,patient,5000
+Medical-SAM3,arterial,positive_lesion_sensitivity_iou10,6,0.5714285714285714,0.38235294117647056,0.9166666666666666,patient,5000
+Medical-SAM3,arterial,negative_significant_output_rate,11,1.0,1.0,1.0,patient,5000
+Medical-SAM3,arterial,allocation_cyst,17,0.08479579766472817,0.007319173139209411,0.1916314751301291,patient,5000
+Medical-SAM3,arterial,allocation_tumor,17,0.6085555193774806,0.423984183412078,0.7376613217597642,patient,5000
+Medical-SAM3,arterial,allocation_background,17,0.19875364242231902,0.11196610659620017,0.33585020617402567,patient,5000
+Medical-SAM3,venous,positive_mean_dice,12,0.21650975200983313,0.11289386368730323,0.3409868713533375,patient,5000
+Medical-SAM3,venous,positive_patient_detection_iou10,12,0.8333333333333334,0.5833333333333334,1.0,patient,5000
+Medical-SAM3,venous,positive_lesion_sensitivity_iou10,12,0.6451612903225806,0.42424242424242425,0.8571428571428571,patient,5000
+Medical-SAM3,venous,negative_significant_output_rate,23,1.0,1.0,1.0,patient,5000
+Medical-SAM3,venous,allocation_cyst,35,0.06887562183582159,0.0058609287869515695,0.1912488116023855,patient,5000
+Medical-SAM3,venous,allocation_tumor,35,0.8239079201740178,0.6721451742243915,0.89737759652622,patient,5000
+Medical-SAM3,venous,allocation_background,35,0.07539413872473126,0.05676920668817426,0.11746457222865118,patient,5000
+Medical-SAM3,delayed,positive_mean_dice,14,0.28077800643199774,0.13764595466559806,0.4342218060672942,patient,5000
+Medical-SAM3,delayed,positive_patient_detection_iou10,14,0.7857142857142857,0.5714285714285714,1.0,patient,5000
+Medical-SAM3,delayed,positive_lesion_sensitivity_iou10,14,0.5813953488372093,0.4230769230769231,0.7222222222222222,patient,5000
+Medical-SAM3,delayed,negative_significant_output_rate,25,1.0,1.0,1.0,patient,5000
+Medical-SAM3,delayed,allocation_cyst,39,0.04600093937605916,0.009720009773047792,0.1233732866062965,patient,5000
+Medical-SAM3,delayed,allocation_tumor,39,0.7530156713423,0.4984794996817432,0.8843030583215437,patient,5000
+Medical-SAM3,delayed,allocation_background,39,0.16993644077604284,0.059400709083887684,0.3980276419547131,patient,5000
+SAT-Pro,arterial,positive_mean_dice,6,0.381012873205461,0.11465969589742582,0.6669837994232538,patient,5000
+SAT-Pro,arterial,positive_patient_detection_iou10,6,0.5,0.16666666666666666,0.8333333333333334,patient,5000
+SAT-Pro,arterial,positive_lesion_sensitivity_iou10,6,0.3333333333333333,0.0625,0.7272727272727273,patient,5000
+SAT-Pro,arterial,negative_significant_output_rate,11,0.7272727272727273,0.45454545454545453,1.0,patient,5000
+SAT-Pro,arterial,allocation_cyst,17,0.5695308858607737,0.011978056817962875,0.9433637095196871,patient,5000
+SAT-Pro,arterial,allocation_tumor,17,0.004811778575932882,0.0,0.02871287315829784,patient,5000
+SAT-Pro,arterial,allocation_background,17,0.34968332739286595,0.02194784545413462,0.8075381899366694,patient,5000
+SAT-Pro,venous,positive_mean_dice,12,0.40371164540076193,0.23970953743840415,0.580445889069869,patient,5000
+SAT-Pro,venous,positive_patient_detection_iou10,12,0.75,0.5,1.0,patient,5000
+SAT-Pro,venous,positive_lesion_sensitivity_iou10,12,0.5806451612903226,0.36363636363636365,0.7916666666666666,patient,5000
+SAT-Pro,venous,negative_significant_output_rate,23,0.6086956521739131,0.391304347826087,0.782608695652174,patient,5000
+SAT-Pro,venous,allocation_cyst,35,0.6018523241494392,0.27161689877289275,0.8189660283056822,patient,5000
+SAT-Pro,venous,allocation_tumor,35,0.11254581623953422,0.025084835561271054,0.2911361596792149,patient,5000
+SAT-Pro,venous,allocation_background,35,0.2403576399262568,0.08509933187996374,0.4550768976625135,patient,5000
+SAT-Pro,delayed,positive_mean_dice,14,0.5033523873473714,0.3114471686964117,0.6835117918719427,patient,5000
+SAT-Pro,delayed,positive_patient_detection_iou10,14,0.7857142857142857,0.5714285714285714,1.0,patient,5000
+SAT-Pro,delayed,positive_lesion_sensitivity_iou10,14,0.6046511627906976,0.34997093023255815,0.8484991423670667,patient,5000
+SAT-Pro,delayed,negative_significant_output_rate,25,0.6,0.4,0.8,patient,5000
+SAT-Pro,delayed,allocation_cyst,39,0.7793451406287066,0.5611650143841694,0.8666341493897979,patient,5000
+SAT-Pro,delayed,allocation_tumor,39,0.11911636222668387,0.058099439517364744,0.26118123223537776,patient,5000
+SAT-Pro,delayed,allocation_background,39,0.046826090226869024,0.023462080887489398,0.10352843154363375,patient,5000
+SegVol,arterial,positive_mean_dice,6,0.0,0.0,0.0,patient,5000
+SegVol,arterial,positive_patient_detection_iou10,6,0.0,0.0,0.0,patient,5000
+SegVol,arterial,positive_lesion_sensitivity_iou10,6,0.0,0.0,0.0,patient,5000
+SegVol,arterial,negative_significant_output_rate,11,0.8181818181818182,0.5454545454545454,1.0,patient,5000
+SegVol,arterial,allocation_cyst,17,0.0,0.0,0.0,patient,5000
+SegVol,arterial,allocation_tumor,17,0.0,0.0,0.0,patient,5000
+SegVol,arterial,allocation_background,17,0.998018755778629,0.9928821921285158,1.0,patient,5000
+SegVol,venous,positive_mean_dice,12,0.008825530617474318,0.0,0.02582001997832062,patient,5000
+SegVol,venous,positive_patient_detection_iou10,12,0.08333333333333333,0.0,0.25,patient,5000
+SegVol,venous,positive_lesion_sensitivity_iou10,12,0.03225806451612903,0.0,0.0975609756097561,patient,5000
+SegVol,venous,negative_significant_output_rate,23,0.9130434782608695,0.782608695652174,1.0,patient,5000
+SegVol,venous,allocation_cyst,35,0.11410352991820921,0.0,0.28201566520795174,patient,5000
+SegVol,venous,allocation_tumor,35,0.028868919500645716,0.0002199415506504453,0.09645230351365447,patient,5000
+SegVol,venous,allocation_background,35,0.8488484718037022,0.6814871756178439,0.9953763268597761,patient,5000
+SegVol,delayed,positive_mean_dice,14,0.0016220655247152786,0.0,0.004828602589183435,patient,5000
+SegVol,delayed,positive_patient_detection_iou10,14,0.0,0.0,0.0,patient,5000
+SegVol,delayed,positive_lesion_sensitivity_iou10,14,0.0,0.0,0.0,patient,5000
+SegVol,delayed,negative_significant_output_rate,25,1.0,1.0,1.0,patient,5000
+SegVol,delayed,allocation_cyst,39,0.08881172701401442,0.0,0.25777719295250684,patient,5000
+SegVol,delayed,allocation_tumor,39,0.010721125449696623,0.0,0.036034472587719774,patient,5000
+SegVol,delayed,allocation_background,39,0.8982298509065526,0.7301347193100618,0.9979985312523717,patient,5000
+VoxTell v1.1,arterial,positive_mean_dice,6,0.0,0.0,0.0,patient,5000
+VoxTell v1.1,arterial,positive_patient_detection_iou10,6,0.0,0.0,0.0,patient,5000
+VoxTell v1.1,arterial,positive_lesion_sensitivity_iou10,6,0.0,0.0,0.0,patient,5000
+VoxTell v1.1,arterial,negative_significant_output_rate,11,0.0,0.0,0.0,patient,5000
+VoxTell v1.1,arterial,allocation_cyst,17,,,,patient,5000
+VoxTell v1.1,arterial,allocation_tumor,17,,,,patient,5000
+VoxTell v1.1,arterial,allocation_background,17,,,,patient,5000
+VoxTell v1.1,venous,positive_mean_dice,12,0.0,0.0,0.0,patient,5000
+VoxTell v1.1,venous,positive_patient_detection_iou10,12,0.0,0.0,0.0,patient,5000
+VoxTell v1.1,venous,positive_lesion_sensitivity_iou10,12,0.0,0.0,0.0,patient,5000
+VoxTell v1.1,venous,negative_significant_output_rate,23,0.0,0.0,0.0,patient,5000
+VoxTell v1.1,venous,allocation_cyst,35,,,,patient,5000
+VoxTell v1.1,venous,allocation_tumor,35,,,,patient,5000
+VoxTell v1.1,venous,allocation_background,35,,,,patient,5000
+VoxTell v1.1,delayed,positive_mean_dice,14,0.0,0.0,0.0,patient,5000
+VoxTell v1.1,delayed,positive_patient_detection_iou10,14,0.0,0.0,0.0,patient,5000
+VoxTell v1.1,delayed,positive_lesion_sensitivity_iou10,14,0.0,0.0,0.0,patient,5000
+VoxTell v1.1,delayed,negative_significant_output_rate,25,0.0,0.0,0.0,patient,5000
+VoxTell v1.1,delayed,allocation_cyst,39,,,,patient,5000
+VoxTell v1.1,delayed,allocation_tumor,39,,,,patient,5000
+VoxTell v1.1,delayed,allocation_background,39,,,,patient,5000
+BiomedParse v2,arterial,renal_union_dice,17,0.6943751094594139,0.6194580488731831,0.7629396521104068,patient,5000
+BiomedParse v2,arterial,tumor_dice,17,0.26530788690281515,0.16920874955082063,0.38391441421565087,patient,5000
+BiomedParse v2,venous,renal_union_dice,35,0.6466949396793334,0.5911313385870278,0.703183529335617,patient,5000
+BiomedParse v2,venous,tumor_dice,35,0.30371887609631026,0.22720938282411474,0.3863110354992301,patient,5000
+BiomedParse v2,delayed,renal_union_dice,39,0.6467124652029644,0.5821782183179389,0.707264528187751,patient,5000
+BiomedParse v2,delayed,tumor_dice,39,0.2628102158673445,0.1854506147149913,0.34733634952556275,patient,5000
+Medical-SAM3,arterial,renal_union_dice,17,0.9064510679647305,0.8668207995814476,0.9353003870617004,patient,5000
+Medical-SAM3,arterial,tumor_dice,17,0.5484865386108686,0.41670322986917807,0.6685456754339985,patient,5000
+Medical-SAM3,venous,renal_union_dice,35,0.8749081173232396,0.8358216805189526,0.9081000567143244,patient,5000
+Medical-SAM3,venous,tumor_dice,35,0.6116749258404993,0.507463644087313,0.7086479370135552,patient,5000
+Medical-SAM3,delayed,renal_union_dice,39,0.8617949171782541,0.8052459710402531,0.9099740567962307,patient,5000
+Medical-SAM3,delayed,tumor_dice,39,0.5345837355664609,0.43548156777833,0.6302244458817654,patient,5000
+SAT-Pro,arterial,renal_union_dice,17,0.8836373512743826,0.8592529181793305,0.9040504966848791,patient,5000
+SAT-Pro,arterial,tumor_dice,17,0.6891066408548031,0.5281486239743416,0.8212990208690741,patient,5000
+SAT-Pro,venous,renal_union_dice,35,0.7509035287994538,0.6860690835160946,0.8092863865129255,patient,5000
+SAT-Pro,venous,tumor_dice,35,0.5575684825715038,0.45111768556166154,0.6609235381065424,patient,5000
+SAT-Pro,delayed,renal_union_dice,39,0.7384008343296738,0.6717503831134966,0.79745813921583,patient,5000
+SAT-Pro,delayed,tumor_dice,39,0.5540410283722188,0.461194205520128,0.6413276039093188,patient,5000
+SegVol,arterial,renal_union_dice,17,0.826094009927702,0.7904252957846026,0.8570625947931846,patient,5000
+SegVol,arterial,tumor_dice,17,0.19960729803818222,0.09039229767549795,0.3267203180161347,patient,5000
+SegVol,venous,renal_union_dice,35,0.8250716357925083,0.7733079520118137,0.8647931046687628,patient,5000
+SegVol,venous,tumor_dice,35,0.24981730387095605,0.13769915020938112,0.3671146272284212,patient,5000
+SegVol,delayed,renal_union_dice,39,0.7999612350341929,0.7418489743565565,0.8481738777201732,patient,5000
+SegVol,delayed,tumor_dice,39,0.20530457698001184,0.1070092060901179,0.31234987408584103,patient,5000
+VoxTell v1.1,arterial,renal_union_dice,17,0.9566328664742523,0.9435897458866496,0.9660468608038362,patient,5000
+VoxTell v1.1,arterial,tumor_dice,17,0.49250656843211565,0.29494392673912245,0.6872694012471365,patient,5000
+VoxTell v1.1,venous,renal_union_dice,35,0.9536759186330913,0.9445643924499723,0.9605997264611611,patient,5000
+VoxTell v1.1,venous,tumor_dice,35,0.619992093810906,0.48912971052079296,0.7434942889443139,patient,5000
+VoxTell v1.1,delayed,renal_union_dice,39,0.9478269716601875,0.9353949747652887,0.9580983736244476,patient,5000
+VoxTell v1.1,delayed,tumor_dice,39,0.5777484813754713,0.44300518055071714,0.7010042969666495,patient,5000
