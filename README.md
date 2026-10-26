@@ -16,7 +16,11 @@ files evaluated by the study.
 
 ### Main label-free scale audit
 
-- 409 KiTS23 scans and all 91 RCC-AID v2.0.0 patients.
+- 409 KiTS23 scans and one frozen annotated CT series from each of all 91
+  RCC-AID v2.0.0 patients. RCC-AID contains 129 annotated series in total;
+  series-selection provenance is documented in
+  `provenance/RCCAID_SERIES_SELECTION.md`, and the 91 selected
+  SeriesInstanceUIDs are listed in `provenance/rccaid_selected_series.csv`.
 - Canonical prompts: `kidney`, `kidney cyst`, and `kidney tumor`. The literal
   concepts were passed directly to VoxTell, Medical-SAM3, and BiomedParse,
   inserted into SegVol's released CT sentence template, and supplied to

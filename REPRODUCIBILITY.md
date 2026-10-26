@@ -5,8 +5,10 @@ It separates two evaluation regimes that answer different questions.
 
 ## Label-free scale audit
 
-The main released-checkpoint audit used 409 KiTS23 scans and all 91 RCC-AID
-v2.0.0 patients. A full-volume SAT-Pro kidney query supplied the crop center;
+The main released-checkpoint audit used 409 KiTS23 scans and one frozen
+annotated CT series from each of all 91 RCC-AID v2.0.0 patients. The RCC-AID
+release contains 129 annotated series; repeated acquisitions from the same
+patient were not treated as independent cases. A full-volume SAT-Pro kidney query supplied the crop center;
 no reference label, cyst status, or tumor status entered crop construction or
 model inference. All five checkpoints received the same physical crop, and
 their predictions were restored to the original CT grid before evaluation.
@@ -34,7 +36,12 @@ metadata by exact SeriesInstanceUID while retaining its source acquisition
 tag. The selected cohort contains 17 arterial, 35 venous, and 39 delayed
 volumes, with one volume per patient. Phase-stratified tables reuse the frozen
 predictions and are descriptive between-patient associations; they are not
-matched multiphase estimates.
+matched multiphase estimates. The two frozen selection stages, their salts,
+rules, and manifest hashes are recorded in
+`provenance/RCCAID_SERIES_SELECTION.md`.
+The corresponding 91-row release manifest is
+`provenance/rccaid_selected_series.csv`; it contains no local paths or model
+outputs.
 
 ## Prompt mapping
 

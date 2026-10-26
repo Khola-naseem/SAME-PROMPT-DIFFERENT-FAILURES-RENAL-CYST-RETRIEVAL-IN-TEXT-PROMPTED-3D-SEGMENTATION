@@ -67,6 +67,38 @@ def main() -> None:
     if observed != EXPECTED_CHECKPOINTS:
         fail("checkpoint table differs from the five directly verified digests")
 
+    selected_series = ROOT / "provenance" / "rccaid_selected_series.csv"
+    with selected_series.open(newline="", encoding="utf-8") as handle:
+        series_rows = list(csv.DictReader(handle))
+    expected_columns = [
+        "case_id", "selection_stage", "series_instance_uid",
+        "corrected_reference_group", "collection", "contrast_phase",
+        "acquisition_tag",
+    ]
+    if not series_rows or list(series_rows[0]) != expected_columns:
+        fail("RCC-AID selected-series manifest has unexpected columns")
+    if len(series_rows) != 91:
+        fail("RCC-AID selected-series manifest must contain 91 rows")
+    if len({row["case_id"] for row in series_rows}) != 91:
+        fail("RCC-AID selected-series case IDs are not unique")
+    if len({row["series_instance_uid"] for row in series_rows}) != 91:
+        fail("RCC-AID selected SeriesInstanceUIDs are not unique")
+    counts = lambda key: {
+        value: sum(row[key] == value for row in series_rows)
+        for value in {row[key] for row in series_rows}
+    }
+    if counts("selection_stage") != {"predefined_60": 60, "remaining_31": 31}:
+        fail("RCC-AID selection-stage counts differ from 60/31")
+    if counts("corrected_reference_group") != {
+        "cyst_positive_tumor_positive": 32,
+        "cyst_negative_tumor_positive": 59,
+    }:
+        fail("RCC-AID corrected reference groups differ from 32/59")
+    if counts("contrast_phase") != {
+        "arterial": 17, "venous": 35, "delayed": 39,
+    }:
+        fail("RCC-AID selected phase counts differ from 17/35/39")
+
     for path in (ROOT / "results").glob("*.csv"):
         with path.open(newline="", encoding="utf-8") as handle:
             rows = list(csv.reader(handle))
